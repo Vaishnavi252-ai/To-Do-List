@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="wrapper show-category">
+      <div class="screen-backdrop"></div>
+      <div class="screen home-screen">
+        <div class="head-wrapper">
+          <div class="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="#ffffff"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </div>
+          <div class="welcome">
+            <div class="content">
+              <h1>Hello Khadus</h1>
+              <p>Today you have 5 tasks</p>
+            </div>
+            <div class="img">
+              <img src="images/user2.png" alt="" width="100px" height="100px" />
+            </div>
+          </div>
+        </div>
+
+        <!----- categories ------>
+        <div class="categories-wrapper">
+          <div class="categories">
+            <div class="category">
+              <div class="left">
+                <img src="images/user2.png" alt="" width="50px" height="50px" />
+                <div class="content">
+                  <h1>Personal</h1>
+                  <p>5 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toggle-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512">
+                    <path
+                      d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------tasks screen--------->
+
+      <div class="screen category-screen">
+        <div class="head-wrapper">
+          <div class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="#ffffff"
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+          </div>
+          <div class="options">
+            <div class="toggle-btn1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512">
+                <path
+                  fill="#ffffff"
+                  d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="category-details">
+          <img src="images/user2.png" alt="" id="category-img" />
+          <div class="details">
+            <p>8 tasks</p>
+            <h1>Personal</h1>
+          </div>
+        </div>
+        <div class="tasks-wrapper">
+          <div class="tasks">
+            <div class="task-wrapper">
+              <label for="task" class="task">
+                <input type="checkbox" name="" id="task" />
+                <span class="checkmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                    />
+                  </svg>
+                </span>
+                <p>Buy a new car</p>
+              </label>
+              <div class="delete">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3C140.6 6.8 151.7 0 163.8 0zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm192 64c-6.4 0-12.5 2.5-17 7l-80 80c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V408c0 13.3 10.7 24 24 24s24-10.7 24-24V273.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-4.5-4.5-10.6-7-17-7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-----add task btn----->
+      <div class="add-task-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            fill="#ffffff"
+            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+          />
+        </svg>
+      </div>
+
+      <!----add task form----->
+      <div class="add-task">
+        <h1 class="heading">Add Task</h1>
+        <div class="input-group">
+          <label for="task-input">Task</label>
+          <input type="text" id="text-input" required>
+        </div>
+        <div class="input-group">
+          <label for="task-input">Task</label>
+          <input type="text" id="text-input" required>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
